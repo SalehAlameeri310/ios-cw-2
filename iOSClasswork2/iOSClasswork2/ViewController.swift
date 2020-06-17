@@ -21,8 +21,43 @@ class ViewController: UIViewController {
         
         
         // MARK: - اكتب ال if statement الكود تحت
+        if animal == "Dog" {
+            emojiArray.append("🐶")
+        }
         
-        
+    if animal == "Cat" {
+        emojiArray.append("🐱")
+    }
+     
+      else if animal == "Horse" {
+            emojiArray.append("🐎")
+        }
+    else if animal == "Mouse" {
+            emojiArray.append("🐭")
+        }
+
+    else if animal == "Wolf" {
+            emojiArray.append("🐺")
+        }
+       else if animal == "Lion" {
+            emojiArray.append("🦁")
+        }
+       else if animal == "Kangaroo" {
+            emojiArray.append("🦘")
+        }
+       else if animal == "Bird" {
+            emojiArray.append("🦜")
+        }
+     else if animal == "Bear" {
+            emojiArray.append("🐻")
+        }
+     else if animal == "Tiger" {
+            emojiArray.append("🐯")
+        }
+    else {
+        emojiArray.append("❓")
+        }
+
         // MARK: - لا تقم بتغيير هذا السطر⚠️⚠️
         animalTextField.text = ""
     }
@@ -37,8 +72,8 @@ class ViewController: UIViewController {
         {
             animalEmojiLabel.text! += label
         }
-        /// **BONUS**: 🎁 قم بمسح مكونات المصفوفة بعد عرضها
-
+        emojiArray.removeAll()
     }
 }
+
 
